@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int n,a,b,rev;
+
+printf("Enter 3 digit Number");
+scanf("%d",&n);
+a=n%10;
+n=n/10;
+b=n%10;
+n=n/10;
+rev=a*100+b*10+n;
+printf("\nReverse is %d",rev);
+
+return 0;
+}
