@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void maximum(int p,int q,int r,int s);
+int main() {
+    int a,b,c,d;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    scanf("%d",&d);
+    maximum(a,b,c,d);
+    return 0;
+}
+void maximum(int p,int q,int r,int s)
+{
+    if(p>q&&p>r&&p>s)
+    printf("%d",p);
+    else if(q>p&&q>r&&q>s)
+    printf("%d",q);
+    else if(r>q&&r>p&&r>s)
+    printf("%d",r);
+    else if(s>q&&s>r&&s>p)
+    printf("%d",s);
+}
