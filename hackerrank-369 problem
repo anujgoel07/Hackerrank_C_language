@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,i,j,x,y,z,c=0;
+    scanf("%d%d",&a,&b);
+    for(j=a;j<=b;j++)
+    {
+        i=j;
+        x=0;
+        y=0;
+        z=0;
+        while(i!=0)
+        {
+            if(i%10==3)
+                x++;
+            else if(i%10==6)
+                y++;
+            else if(i%10==9)
+                z++;
+            i=i/10;
+        }
+        if(x>0&&x==y&&y==z)
+            c++;
+    }
+    printf("%d",c);
+    return 0;
+}
