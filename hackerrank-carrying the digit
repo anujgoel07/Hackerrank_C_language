@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	int n,m,c=0,carry,s;
+	scanf("%d",&n);
+	scanf("%d",&m);
+	while(n!=0 && m!=0)
+	{
+		s=0;
+		s=carry+n%10+m%10;
+		carry=s/10;
+		if(carry>0)
+		{
+			c++;
+		}
+		n=n/10;
+		m=m/10;
+	}
+	printf("%d",c);
+	return 0;
+}
